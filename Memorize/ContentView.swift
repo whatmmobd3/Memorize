@@ -1,16 +1,18 @@
-//
-//  ContentView.swift
-//  Memorize
-//
-//  Created by David Nguyen on 06/06/2022.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(lineWidth: 3)
+                .padding(.horizontal)
+            Text("Hello, world!")
+                .foregroundColor(.orange)
+            
+        }
+        .padding(.horizontal)
+        .foregroundColor(.red)
+        
     }
 }
 
